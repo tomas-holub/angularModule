@@ -1,0 +1,13 @@
+{
+    "author": "Tomas.Holub",
+    "email": "tomas.holub@check24.de",
+    "name": "ang_app",
+    "version": "0.0.0",
+    "description": "A starter project for TELKO mobile version",
+    "dependencies": {
+        
+    },
+    "devDependencies": {
+        
+    }
+}

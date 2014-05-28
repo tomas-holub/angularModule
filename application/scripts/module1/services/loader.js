@@ -1,5 +1,5 @@
 // load the module contents
-console.log('module loader', 'core/services/loader');
+console.log('module loader');
 define([
    './testService'
 ], function () {});

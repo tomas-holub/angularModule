@@ -14,33 +14,20 @@
 */
 define(['./definition'], function(controllers) {
 
-   controllers.controller('IndexController', [
+   controllers.controller('core_indexController', [
        '$scope',
        '$http',
-       '$route',
-       '$routeParams',
-       '$compile',
        'testService',
-       'module_testService',
-       'module_indexController',
-       function(
-               $scope,
-               $http,
-               $route,
-               $routeParams,
-               $compile,
-               testService,
-               module_testService,
-               module_indexController
+
+       function (
+            $scope,
+            $http,
+            testService
        ){
 
-           $route.current.templateUrl = 'scripts/' + $routeParams.module + '/views/' + $routeParams.controller + '.html';
-           $route.current.controller  = $routeParams.module + '_' + $routeParams.controller + 'Controller';
-console.log($route.current.controller, 'here');
-           $http.get($route.current.templateUrl).then(function (msg) {
-               $('#views').html($compile(msg.data)($scope));
-           });
-           testService.greet('ahoj z index controlleru');
+        console.log('fei log of core/indexController ');
+        $scope.foo = 'bar';
+        testService.greet('core index controller greetings');
    }]);
 });
 

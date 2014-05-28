@@ -11,7 +11,8 @@ define([
    'scripts/core/controllers/loader',
    'scripts/core/services/loader',
    'scripts/module/services/loader',
-   'scripts/module/controllers/loader'
+   'scripts/module/controllers/loader',
+   'scripts/module1/controllers/loader'
 
 ], function(angular) {
        return angular.module('myApp', [
@@ -20,6 +21,7 @@ define([
            'app.core.controllers',
            'app.core.services',
            'app.module.services',
-           'app.module.controllers'
+           'app.module.controllers',
+           'app.module1.controllers'
    ]);
 });

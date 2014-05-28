@@ -1,5 +1,5 @@
 // load the module contents
-console.log('module loader', 'module/controller/loader');
+console.log('module1 loader');
 define([
    './indexController'
 ], function () {

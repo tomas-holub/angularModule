@@ -6,8 +6,12 @@ console.log('router');
        $routeProvider.when(
                '/:module/:controller',
                {
-                   templateUrl: 'scripts/core/views/index.html',
-                   controller: 'IndexController'
+                   templateUrl: function(url) {
+                       return 'scripts/' + url.module + '/views/' + url.controller + '.html';
+                   },
+                   controller: function($scope, $routeParams, $controller) {
+                       $controller($routeParams.module + '_' + $routeParams.controller + 'Controller', {$scope: $scope});
+                   }
                });
        $routeProvider.otherwise(
                {

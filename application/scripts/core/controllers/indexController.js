@@ -24,11 +24,8 @@ define(['./definition'], function(controllers) {
             $http,
             testService
        ){
-
-        console.log('fei log of core/indexController ');
-        $scope.foo = 'bar';
         testService.greet('core index controller greetings');
-   }]);
+    }]);
 });
 
 

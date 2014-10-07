@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html>
    <head>
-       <title>TELEKO Mobile App</title>
+       <title>Angular app</title>
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width">
    </head>
-   <body>          content:
-       <div id="views" ng-view>
+   <body>
+
+   <div id="menu">
+       <ul>
+           <li><a href="#/core/index">core</a></li>
+           <li><a href="#/module/index">module</a></li>
+           <li><a href="#/module1/index">module1</a></li>
+       </ul>
+   </div>
+
+       content:
+       <div id="" ng-view>
 
 
 
        </div>
-       <script data-main="scripts/main" src="../vendor/requirejs/require.js"></script>
+       <script data-main="scripts/main" src="../bower_components/requirejs/require.js"></script>
    </body>
 </html>

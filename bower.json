@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "description": "Base structure angular app with modules",
+  "moduleType": [
+    "globals"
+  ],
+  "authors": [
+    "Tomas Holub"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "latest",
+    "angular-resource": "latest",
+    "jquery":"latest",
+    "requirejs":"latest",
+    "domready":"latest"
+  }
+}

@@ -3,11 +3,11 @@
 require.config({
    baseUrl: '../',
    paths: {
-       'angular': 'vendor/angular',
-       'domReady': 'vendor/requirejs/domReady',
-       'angularRoute': 'vendor/angular-route',
-       'angularResource': 'vendor/angular-resource',
-       'jquery': 'vendor/jquery-1.11.1'
+       'angular': 'bower_components/angular/angular',
+       'domReady': 'bower_components/domready/ready',
+       'angularRoute': 'bower_components/angular-route/angular-route',
+       'angularResource': 'bower_components/angular-resource/angular-resource',
+       'jquery': 'bower_components/jquery/dist/jquery'
    },
 
    // allows to manage dependencies of libraries without amd support

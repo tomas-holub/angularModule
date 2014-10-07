@@ -2,8 +2,6 @@
 * App defines dependencies of angular app on controllers, services...
 * Returns angular.module
 */
-
-console.log('app.js');
 define([
    'angular',
    'angularRoute',
